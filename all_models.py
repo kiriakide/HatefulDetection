@@ -27,7 +27,7 @@ def load_config(config_path):
 
 
 
-# Load the tokenizer (use different tokenizers for different models)
+# Load the tokenizer (different tokenizer for each model)
 tokenizers = {
     "BERTClass": BertTokenizer.from_pretrained('bert_tokenizer'),
     "GPT2class": GPT2Tokenizer.from_pretrained('gpt2_tokenizer'),
